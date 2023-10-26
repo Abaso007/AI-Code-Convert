@@ -5,6 +5,7 @@ import { TextBlock } from '@/components/TextBlock';
 import { TranslateBody } from '@/types/types';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
+import { AdsBottom } from '@/components/AdsBottom';
 
 export default function Home() {
   const [option, setOption] = useState('');
@@ -171,9 +172,10 @@ System.out.println("The sum is: " + sum);
 	    <h2 className="text-xl md:text-4xl font-bold"><span className="text-blue-500">AI</span> {title}</h2>
 	    <h3 className="mt-2 md:mt-5 text md:text-xl text-center leading-2">{subtitle}</h3>
 	  </div>
+	  <AdsBottom />
       <div className="flex h-full items-center justify-center bg-[#0E1117] text-neutral-100 px-2">
-        <div className="mt-2 flex-row items-center justify-center w-full md:w-3/5 lg:w-3/5">
-          <div className="mt-2 flex h-full flex-col justify-center">
+        <div className="flex-row items-center justify-center w-full md:w-3/5 lg:w-3/5">
+          <div className="flex h-full flex-col justify-center">
             <div>
 				<div className="mt-5 flex space-x-2">
 					<div className="text-center text-xl font-bold">TO</div>
@@ -279,7 +281,6 @@ System.out.println("The sum is: " + sum);
 			  	</div>
 			  </a>
 			</div>
-			
         </div>
         </div>
 	  </div>
